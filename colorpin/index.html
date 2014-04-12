@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
-<script type="text/javascript">
+	<title>Color Pin</title>
+	<script type="text/javascript">
 	function main(){
 		var pat = new RegExp("[0-9a-f]{8}","i");
 		var pin = document.getElementById("pin").value;
@@ -11,14 +11,23 @@
 			document.getElementsByTagName("body")[0].style.background="#" + color;
 		}
 	}
-</script>
-<style type="text/css">
-	.control {background: #eebdef;border:3px dashed black; width: 300px; height: 70px;padding: 20px 25px}
-</style>
+	</script>
+	<style type="text/css">
+		.control {
+			background: #eebdef;
+			border:3px dashed black;
+			width: 300px; 
+			height: 70px;
+			padding: 20px 25px
+		}
+	</style>
 </head>
 <body>
-<div class="control">
-<label>Mi Pin: <input type="text" id="pin" /><button onclick="main()">Colorea!</button></label>
-</div>
+	<div class="control">
+		<label>Mi Pin: 
+			<input type="text" id="pin" />
+			<button onclick="main()">Colorea!</button>
+		</label>
+	</div>
 </body>
 </html>
