@@ -1,2 +1,1 @@
-js
-==
+Stuff made in js :)
